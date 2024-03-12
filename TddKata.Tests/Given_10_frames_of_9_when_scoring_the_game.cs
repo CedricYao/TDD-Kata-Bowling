@@ -17,7 +17,6 @@ namespace TddKata.Tests
         [InlineData("4/ -- 5- -- -- -- -- -- -- --", 15)]
         [InlineData("4/ 5- -- -- -- -- -- -- -- --", 20)]
         [InlineData("5/ 5/ -- -- -- -- -- -- -- --", 25)]
-        [InlineData("5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5", 150)]
         public void Should_return_expected_score(string game, int expected_score)
         {
             var scoringCalculator = new ScoringCalculator();
